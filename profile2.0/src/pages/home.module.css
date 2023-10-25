@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: left;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  border: 1px solid white;
+}
+
+.intro {
+  background-color: red;
+}
+
+.contact {
+  background-color: pink;
+}
+
+.projects {
+  background-color: yellow;
+}
