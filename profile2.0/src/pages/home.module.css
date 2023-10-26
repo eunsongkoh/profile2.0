@@ -25,20 +25,30 @@ h3 {
 }
 
 div {
+}
+
+.intro {
   height: 100vh;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   border: 1px white solid;
 }
 
-.intro {
-}
-
 .contact {
+  height: 100vh;
+  width: 100vw;
+  border: 1px white solid;
 }
 
 .projects {
+  height: 100vh;
+  width: 100vw;
+  border: 1px white solid;
+}
+
+.multimedia {
+  height: 100vh;
+  width: 100vw;
+  border: 1px white solid;
 }
 
 .scrolltotop {
@@ -46,4 +56,9 @@ div {
   top: 20px;
   right: 20px;
   z-index: 999; /* Adjust the z-index value */
+}
+
+.theCards {
+  height: 100%;
+  width: 100%;
 }
