@@ -1,22 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import classes from "./navbar.module.css";
 
 const navbar = () => {
   return (
     <header className={classes.header}>
       <nav>
-        <li>
-          <Link to="/">Song</Link>
-        </li>
-        {/* <li>
-          <Link to="/pages/#projects">Projects</Link>
-        </li> */}
-        {/* <li>
-          <Link to="/#contact">Contact Me</Link>
-        </li>
-        <li>
-          <Link to="/pages/#multimedia">Multimedia</Link>
-        </li> */}
+        <ul>
+          <li>
+            <Link to="intro" spy={true} smooth={true} duration={1000}>
+              Song
+            </Link>
+          </li>
+          <li>
+            <Link to="projects" spy={true} smooth={true} duration={1000}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="multimedia" spy={true} smooth={true} duration={1000}>
+              Multimedia
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" spy={true} smooth={true} duration={1000}>
+              Contact Me
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );

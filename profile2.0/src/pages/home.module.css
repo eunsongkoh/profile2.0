@@ -6,23 +6,35 @@ h2 {
   text-align: left;
 }
 
+h1 {
+  font-size: 5em;
+  color: #ffa8a9;
+}
+
+h3 {
+  color: #f4d6cc;
+}
+
+.theTitle {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10em;
+}
+
 div {
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  border: 1px solid white;
 }
 
 .intro {
-  background-color: red;
 }
 
 .contact {
-  background-color: pink;
 }
 
 .projects {
-  background-color: yellow;
 }
