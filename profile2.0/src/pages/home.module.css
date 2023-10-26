@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -11,8 +10,8 @@ h1 {
 h2 {
   text-align: left;
   padding-left: 1em;
+  color: #ffa8a9;
 }
-
 h3 {
   color: #f4d6cc;
 }
@@ -42,33 +41,9 @@ div {
 .projects {
 }
 
-.theCards {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-.MuiCard {
-  text-align: left !important;
-  border-radius: 50px !important;
-  width: 10em;
-  height: 10em;
-}
-
-.buttons:hover {
-  outline: pink solid 0.5px;
-  background-color: pink !important;
-}
-
-.buttons {
-  justify-content: center !important;
-  color: black !important;
-  outline: solid 1px pink;
-  transition: color 0.2s, outline 0.2s; /* Add transition properties */
-}
-
-.MuiCard:hover {
-  box-shadow: -30px 30px 20px rgba(30, 30, 30, 0.156);
+.scrolltotop {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999; /* Adjust the z-index value */
 }
