@@ -15,6 +15,17 @@ h2 {
 h3 {
   color: #f4d6cc;
 }
+h5 {
+  color: #f4d6cc;
+  padding-left: 2em;
+  text-align: center;
+}
+
+h4 {
+  color: #f4d6cc;
+  text-align: center;
+  justify-content: center;
+}
 
 .theTitle {
   text-align: center;
@@ -22,9 +33,6 @@ h3 {
   justify-content: center;
   margin: auto;
   padding-top: 10em;
-}
-
-div {
 }
 
 .intro {
@@ -43,7 +51,6 @@ div {
 }
 
 .multimedia {
-  height: 100vh;
   width: 100vw;
 }
 
@@ -57,4 +64,10 @@ div {
 .theCards {
   height: 100%;
   width: 100%;
+}
+
+.social {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }

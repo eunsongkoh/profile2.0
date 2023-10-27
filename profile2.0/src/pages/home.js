@@ -2,6 +2,9 @@ import classes from "./home.module.css";
 import { Element, scroller } from "react-scroll";
 import Navbar from "../components/Layout/navbar";
 import { Chrono } from "react-chrono";
+import { InstagramEmbed } from "react-social-media-embed";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const ScrollToTopButton = () => {
   const scrollToTop = () => {
@@ -12,9 +15,18 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <button className={classes.scrolltotop} onClick={scrollToTop}>
+    <Button
+      variant="contained"
+      style={{
+        position: "fixed",
+        top: " 20px",
+        right: "20px",
+        backgroundColor: "#ffa8a9",
+      }}
+      onClick={scrollToTop}
+    >
       Scroll to Top
-    </button>
+    </Button>
   );
 };
 
@@ -153,7 +165,33 @@ const HomePage = () => {
         </section>
       </div>
       <div className={classes.multimedia} id="multimedia">
-        <h2>multimedia</h2>
+        <h2>Multimedia</h2>
+        <h5>
+          i have a huge passion for digital design! <br></br>currently, i'm a{" "}
+          <i>Video Editor for the Computing Science Student Society</i> and{" "}
+          <br></br>the{" "}
+          <i>Director of Communications and Multimedia at SFU DNS Club</i>
+        </h5>
+        <h4>some of my projects</h4>
+        <div className={classes.social}>
+          <div style={{ display: "flex", justifyContent: "left" }}>
+            <InstagramEmbed
+              url="https://www.instagram.com/reel/CyE7V65tl4h/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+              width={328}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "right",
+            }}
+          >
+            <InstagramEmbed
+              url="https://www.instagram.com/p/CyAX1CPu3K5/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+              width={328}
+            />
+          </div>
+        </div>
       </div>
       <div className={classes.contact} id="contact">
         <h2>Contact Me</h2>
