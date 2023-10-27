@@ -5,6 +5,9 @@ import { Chrono } from "react-chrono";
 import { InstagramEmbed } from "react-social-media-embed";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { CiLinkedin } from "react-icons/ci";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 const ScrollToTopButton = () => {
   const scrollToTop = () => {
@@ -62,7 +65,7 @@ const HomePage = () => {
       media: {
         type: "IMAGE",
         source: {
-          media: "/img/gesture.png",
+          media: "./img/gesture.png",
         },
       },
     },
@@ -76,7 +79,7 @@ const HomePage = () => {
       media: {
         type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "img/DNSPoster.png", // Replace with the actual image URL
+          media: "./img/DNSPoster.png", // Replace with the actual image URL
         },
       },
     },
@@ -89,7 +92,7 @@ const HomePage = () => {
       media: {
         type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "img/pdf.jpg", // Replace with the actual image URL
+          media: "./img/pdf.jpg", // Replace with the actual image URL
         },
       },
     },
@@ -103,7 +106,7 @@ const HomePage = () => {
       media: {
         type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "img/password.png", // Replace with the actual image URL
+          media: "./img/password.png", // Replace with the actual image URL
         },
       },
     },
@@ -195,8 +198,27 @@ const HomePage = () => {
       </div>
       <div className={classes.contact} id="contact">
         <h2>Contact Me</h2>
+        <div className={classes.contactInfo}>
+          <a
+            href="https://www.linkedin.com/in/songkoh/"
+            className={classes.links}
+          >
+            <CiLinkedin style={{ fill: "black" }} /> chat with me on linkedin!
+          </a>
+          <br></br>
+          <br></br>
+          <a href="mailto: eka74@sfu.ca" className={classes.links}>
+            <AiOutlineMail style={{ fill: "black" }} /> send me an email!
+          </a>
+          <br></br>
+          <br></br>
+          <a href="https://github.com/eunsongkoh" className={classes.links}>
+            <AiFillGithub style={{ fill: "black" }} /> my github
+          </a>
+        </div>
       </div>
       <ScrollToTopButton />
+      <footer>Created By Eunsong Koh</footer>
     </main>
   );
 };
