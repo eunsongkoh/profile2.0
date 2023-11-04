@@ -3,7 +3,7 @@
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   color: #ffa8a9;
 }
 
@@ -23,7 +23,7 @@ h5 {
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  background-color: #8693ab;
+  margin: auto;
   width: 60%;
 }
 
@@ -42,6 +42,11 @@ footer {
   color: #f4d6cc;
 }
 
+big {
+  font-size: 35px;
+  background-color: #8693ab;
+}
+
 .theTitle {
   text-align: center;
   align-items: center;
@@ -55,10 +60,38 @@ footer {
   width: 100vw;
 }
 
+.about {
+  height: 100vh;
+  width: 100vw;
+}
+
+.aboutMeText {
+  text-align: left;
+  background-color: #8693ab;
+  padding-left: 1em;
+  justify-content: left;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.spotifysong {
+  margin-right: 1em;
+  padding-left: 1em;
+}
+
+.aboutMeDivs {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .contact {
   height: 100vh;
   width: 100vw;
   text-align: center;
+  margin-bottom: -5em;
 }
 
 .projects {
@@ -87,29 +120,71 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-
-.contactInfo {
-  font-size: 1.5em;
-  padding-top: 5em;
-}
-
-.about {
-  height: 100vh;
-  width: 100vw;
-}
-
-.aboutMeText {
-  width: 50%;
-  background-color: #8693ab;
-}
-
-.aboutmeDivs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .social {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  big {
+    font-size: 1.5em;
+  }
+
+  .spotifysong {
+    width: 30em !important;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  big {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    padding-left: 1em;
+  }
+  .social {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .aboutMeDivs {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .aboutMeText {
+    width: 90vw;
+  }
+
+  .spotifysong {
+    display: none;
+  }
+
+  .spotTitle {
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 5em;
+  }
 }

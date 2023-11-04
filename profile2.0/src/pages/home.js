@@ -3,7 +3,6 @@ import { Element, scroller } from "react-scroll";
 import Navbar from "../components/Layout/navbar";
 import { Chrono } from "react-chrono";
 import { InstagramEmbed } from "react-social-media-embed";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { CiLinkedin } from "react-icons/ci";
 import { AiOutlineMail } from "react-icons/ai";
@@ -49,10 +48,10 @@ const HomePage = () => {
         "A devotional web app that generates descriptions of any Bible verse. Created as a birthday gift! ",
       cardDetailedText: "Next.js, Express.js, Node.js",
       media: {
-        type: "IMAGE",
         source: {
-          media: "",
+          url: "/img/logo.jpg",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -63,10 +62,10 @@ const HomePage = () => {
         "An accessible ASL Translator utilizing Google Cloud's API and Teachable Machine AI Model",
       cardDetailedText: "HTML/CSS, JS, Ajax, Node.js, Google Cloud API",
       media: {
-        type: "IMAGE",
         source: {
-          media: "./img/gesture.png",
+          url: "/img/gesture.png",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -77,10 +76,10 @@ const HomePage = () => {
         "The official website of SFU DNS Club website created with React.js",
       cardDetailedText: "React.js, HTML/CSS",
       media: {
-        type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "./img/DNSPoster.png", // Replace with the actual image URL
+          url: "/img/DNSPoster.png",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -90,10 +89,10 @@ const HomePage = () => {
         "A Python program developed to automate onboarding contracts for NCI HR Department",
       cardDetailedText: "Python",
       media: {
-        type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "./img/pdf.jpg", // Replace with the actual image URL
+          url: "/img/password.png",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -104,10 +103,10 @@ const HomePage = () => {
         "An application that provides real-time updates on weather conditions on user-inputted cities",
       cardDetailedText: "Python, Json, Requests, Open-Weather API, Tkinter GUI",
       media: {
-        type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "./img/password.png", // Replace with the actual image URL
+          url: "/img/clouds.png",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -117,10 +116,10 @@ const HomePage = () => {
       cardSubtitle: "A Python application that stores a database of passwords",
       cardDetailedText: "Python, SQLite3, Tkinter, HashLib",
       media: {
-        type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "./img/DNSPoster.png", // Replace with the actual image URL
+          url: "/img/password.png",
         },
+        type: "IMAGE",
       },
     },
     {
@@ -130,13 +129,36 @@ const HomePage = () => {
         "Utilized Python and SQL to analyze global and national data on violence against women and provided insights into patterns and trends on a web application",
       cardDetailedText: "SQL, Python, Google Data Studio",
       media: {
-        type: "IMAGE", // You can specify other media types if needed
         source: {
-          media: "./img/kwk.jpg", // Replace with the actual image URL
+          url: "/img/kwk.jpg",
         },
+        type: "IMAGE",
       },
     },
   ];
+
+  const languages = [
+    "Python",
+    "C/C++",
+    "SQL",
+    "JavaScript",
+    "TypeScript",
+    "HTML/CSS",
+  ];
+  const tech = ["React", "Next", "Node.js", "Express.js", ""];
+  const courses = [
+    "Data Structures & Algorithms: C/C++",
+    "Client-Side Development: HTML/CSS, JS, TS, Angular",
+  ];
+
+  const lan = languages.map((lan) => (
+    <l1>
+      {lan}
+      <br></br>
+    </l1>
+  ));
+  const technology = tech.map((t) => <l1>{tech}</l1>);
+  const crs = courses.map((c) => <l1>{courses}</l1>);
   return (
     <main>
       <Element name="intro">
@@ -154,31 +176,64 @@ const HomePage = () => {
           <h2>About Me</h2>
           <div className={classes.aboutMeDivs}>
             <div className={classes.aboutMeText}>
-              <h3>Hi, My name is Song. I'm a 2nd Year CS student at SFU.</h3>
+              <h3>
+                Hi, My name is Song. I'm a 2nd Year Computing Science student at
+                Simon Fraser University. I'm passionate about all things
+                computer science! I think it's awesome how we can bring creative
+                ideas and solutions to real-world problems with something as
+                technical as a computer.
+                <br></br>
+                Thanks for coming by!
+              </h3>
+
+              <h3>
+                <big>My Languages & Technologies:</big>
+                <i>
+                  <br></br>
+                  -Python
+                  <br></br>
+                  -C/C++
+                  <br></br>
+                  -SQL
+                  <br></br>
+                  -JavaScript
+                  <br></br>
+                  -TypeScript
+                  <br></br>
+                  -HTML/CSS
+                  <br></br>
+                  React.js, Next.js, Node.js, Express.js, Bootstrap, MUI, Git
+                </i>
+              </h3>
+              <br></br>
+              <h3>
+                <big>Relevant Coursework</big>
+                <i>
+                  <br></br>
+                  <b>Data Structures & Algorithms:</b> C/C++
+                  <br></br>
+                  <br></br>
+                  <b>Client-Side Development:</b> HTML/CSS, JavaScript,
+                  TypeScript, Angular
+                </i>
+              </h3>
             </div>
-            <div className={classes.aboutMeText} style={{ textAlign: "right" }}>
-              <h3>My Languages & Technologies: </h3>
-              <h4>
-                <ul>
-                  <li>Python</li>
-                  <br></br>
-                  <li>C++/C</li>
-                  <br></br>
-                  <li>SQL</li>
-                  <br></br>
-                  <li>JS, React.js, Next.js, Node.js, Express.js, MUI</li>
-                </ul>
-              </h4>
-              <h3>Relevant Coursework: </h3>
-              <h4>
-                <ul>
-                  <li>
-                    Client-Side Development: HTML/CSS, Angular, TypeScript,
-                    JavaScript
-                  </li>
-                  <li>Data Structures & Algorithms: C++/C</li>
-                </ul>
-              </h4>
+            <div className={classes.spotfy}>
+              <h5 className={classes.spotTitle}>My Song of the Week</h5>
+              <iframe
+                className={classes.spotifysong}
+                title="Songs Song of the Week"
+                style={{
+                  borderRadius: "10px",
+                  width: "500px", // Adjust the width here
+                }}
+                src="https://open.spotify.com/embed/track/6QCPweR3aP6nj7P43WpiZs?utm_source=generator"
+                height="400"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -204,12 +259,20 @@ const HomePage = () => {
       <div className={classes.multimedia} id="multimedia">
         <h2>Multimedia</h2>
         <h5>
-          i have a huge passion for digital design! <br></br>currently, i'm a{" "}
-          <i>Video Editor for the Computing Science Student Society</i> and{" "}
-          <br></br>the{" "}
-          <i>Director of Communications and Multimedia at SFU DNS Club</i>
+          i have a huge passion for digital design! currently, i'm a <br></br>
+          <i>
+            <big>Video Editor @ SFU Computing Science Student Society</big>
+          </i>{" "}
+          <br></br>
+          <br></br>
+          <i>
+            <big>
+              Director of Communications and Multimedia @ SFU Developers &
+              Systems Club
+            </big>
+          </i>
         </h5>
-        <h4>some of my projects</h4>
+        <h4>some of my work</h4>
         <div className={classes.social}>
           <div style={{ display: "flex", justifyContent: "left" }}>
             <InstagramEmbed
