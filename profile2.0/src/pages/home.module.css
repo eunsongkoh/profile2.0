@@ -16,11 +16,15 @@ h2 {
 h3 {
   color: #f4d6cc;
 }
+
 h5 {
   color: #f4d6cc;
   padding-left: 2em;
   font-size: 20px;
   text-align: center;
+  justify-content: center;
+  background-color: #8693ab;
+  width: 60%;
 }
 
 h4 {
@@ -87,4 +91,25 @@ footer {
 .contactInfo {
   font-size: 1.5em;
   padding-top: 5em;
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+}
+
+.aboutMeText {
+  width: 50%;
+  background-color: #8693ab;
+}
+
+.aboutmeDivs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }

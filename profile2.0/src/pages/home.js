@@ -149,6 +149,40 @@ const HomePage = () => {
           </div>
         </div>
       </Element>
+      <Element name="about">
+        <div className={classes.about}>
+          <h2>About Me</h2>
+          <div className={classes.aboutMeDivs}>
+            <div className={classes.aboutMeText}>
+              <h3>Hi, My name is Song. I'm a 2nd Year CS student at SFU.</h3>
+            </div>
+            <div className={classes.aboutMeText} style={{ textAlign: "right" }}>
+              <h3>My Languages & Technologies: </h3>
+              <h4>
+                <ul>
+                  <li>Python</li>
+                  <br></br>
+                  <li>C++/C</li>
+                  <br></br>
+                  <li>SQL</li>
+                  <br></br>
+                  <li>JS, React.js, Next.js, Node.js, Express.js, MUI</li>
+                </ul>
+              </h4>
+              <h3>Relevant Coursework: </h3>
+              <h4>
+                <ul>
+                  <li>
+                    Client-Side Development: HTML/CSS, Angular, TypeScript,
+                    JavaScript
+                  </li>
+                  <li>Data Structures & Algorithms: C++/C</li>
+                </ul>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </Element>
       <div className={classes.projects} id="projects">
         <h2>My Projects</h2>
         <section className={classes.theCards}>
