@@ -7,7 +7,7 @@ const navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="intro" spy={true} smooth={true} duration={1000}>
+            <Link to="about" spy={true} smooth={true} duration={1000}>
               Song
             </Link>
           </li>

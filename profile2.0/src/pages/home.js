@@ -45,7 +45,7 @@ const HomePage = () => {
       title: "Every Second Devotion, 2023",
       cardTitle: "Every Second Devotion",
       cardSubtitle:
-        "A devotional web app that generates descriptions of any Bible verse. Created as a birthday gift! ",
+        "A devotional web app that generates descriptions for the passage of the day or on random. Created as a birthday gift! ",
       cardDetailedText: "Next.js, Express.js, Node.js",
       media: {
         source: {
@@ -86,7 +86,7 @@ const HomePage = () => {
       title: "AutoFill PDF 2023",
       cardTitle: "AutoFill PDF",
       cardSubtitle:
-        "A Python program developed to automate onboarding contracts for NCI HR Department",
+        "A Python program I independently developed during my time at NCI as a seasonal student to help automate their onboarding contracts for the HR Department",
       cardDetailedText: "Python",
       media: {
         source: {
@@ -137,28 +137,6 @@ const HomePage = () => {
     },
   ];
 
-  const languages = [
-    "Python",
-    "C/C++",
-    "SQL",
-    "JavaScript",
-    "TypeScript",
-    "HTML/CSS",
-  ];
-  const tech = ["React", "Next", "Node.js", "Express.js", ""];
-  const courses = [
-    "Data Structures & Algorithms: C/C++",
-    "Client-Side Development: HTML/CSS, JS, TS, Angular",
-  ];
-
-  const lan = languages.map((lan) => (
-    <l1>
-      {lan}
-      <br></br>
-    </l1>
-  ));
-  const technology = tech.map((t) => <l1>{tech}</l1>);
-  const crs = courses.map((c) => <l1>{courses}</l1>);
   return (
     <main>
       <Element name="intro">
@@ -177,13 +155,23 @@ const HomePage = () => {
           <div className={classes.aboutMeDivs}>
             <div className={classes.aboutMeText}>
               <h3>
-                Hi, My name is Song. I'm a 2nd Year Computing Science student at
-                Simon Fraser University. I'm passionate about all things
-                computer science! I think it's awesome how we can bring creative
-                ideas and solutions to real-world problems with something as
-                technical as a computer.
+                <big>Hi, My name is Song!</big>
+                <br></br> I'm a 2nd Year Computing Science student at Simon
+                Fraser University. I'm passionate about all things computer
+                science! I think it's awesome how we can bring creative ideas
+                and solutions to real-world problems with something as technical
+                as a computer.
                 <br></br>
-                Thanks for coming by!
+                <br></br>In my free time, I love listening to music (
+                <i>
+                  I listened to more than 72 genres in 2022 according to Spotify
+                </i>
+                ), watching F1 races, or learning something new from Youtube or
+                workshops/talks around my school campus.
+                <br></br>
+                <br></br>
+                In the future, I aspire to pursue a future in software
+                development and engineering! Thanks for coming by!
               </h3>
 
               <h3>
@@ -219,7 +207,7 @@ const HomePage = () => {
               </h3>
             </div>
             <div className={classes.spotfy}>
-              <h5 className={classes.spotTitle}>My Song of the Week</h5>
+              <h5 className={classes.spotTitle}>Songs Song of the Week</h5>
               <iframe
                 className={classes.spotifysong}
                 title="Songs Song of the Week"
@@ -259,7 +247,7 @@ const HomePage = () => {
       <div className={classes.multimedia} id="multimedia">
         <h2>Multimedia</h2>
         <h5>
-          i have a huge passion for digital design! currently, i'm a <br></br>
+          I have a huge passion for digital design! Currently, I'm a <br></br>
           <i>
             <big>Video Editor @ SFU Computing Science Student Society</big>
           </i>{" "}
@@ -272,7 +260,7 @@ const HomePage = () => {
             </big>
           </i>
         </h5>
-        <h4>some of my work</h4>
+        <h4>Some of my work</h4>
         <div className={classes.social}>
           <div style={{ display: "flex", justifyContent: "left" }}>
             <InstagramEmbed
