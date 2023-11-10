@@ -80,6 +80,7 @@ big {
 .spotifysong {
   margin-right: 1em;
   padding-left: 1em;
+  margin-top: 1em;
 }
 
 .aboutMeDivs {
@@ -192,6 +193,6 @@ ul {
   }
 
   .about {
-    padding-bottom: 5em;
+    margin-bottom: 30em;
   }
 }
